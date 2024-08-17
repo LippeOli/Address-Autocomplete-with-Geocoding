@@ -1,0 +1,81 @@
+/* Estilos gerais para o container do autocompletar */
+.autocomplete-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+    margin-top: 170px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  /* Estilo para a seção de títulos */
+  .name {
+    text-align: center; /* Centraliza o texto dentro da div .name */
+  }
+  
+  /* Estilos para o campo de entrada de texto */
+  input[type="text"] {
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Estilo quando o campo de entrada recebe foco */
+  input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+  /* Estilos para a lista de sugestões */
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para cada item da lista de sugestões */
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo ao passar o mouse sobre um item da lista */
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos para as coordenadas */
+  .coordinates {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .coordinates h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .coordinates p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
